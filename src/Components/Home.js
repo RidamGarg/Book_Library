@@ -28,7 +28,14 @@ function Home({ fetchData, books, title, setTitle, offset, setOffset }) {
           <h1 className="mt-5">No Relevant Data Found</h1>
         )
       ) : (
-        <Spinner animation="grow" variant="light" className="mt-5" size="lg" />
+        <div>
+          <Spinner
+            animation="grow"
+            variant="light"
+            className="mt-5"
+            size="lg"
+          />
+        </div>
       )}
 
       {books && books.length > 0 && (
